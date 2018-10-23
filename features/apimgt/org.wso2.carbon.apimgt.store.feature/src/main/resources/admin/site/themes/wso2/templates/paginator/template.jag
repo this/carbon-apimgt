@@ -4,8 +4,8 @@
 %>
  <!--START Pagination links-->
     <% if(numberOfPages > 1) { %>
-                    <div class="pagination">
-                        <ul>
+                    <div class="col-sm-12">
+                        <ul class="pagination">
                           <li <% if(currentPage == 1) { %> class="disabled" <% } %>><a <% if(currentPage != 1) { %>
                           href="?page=<%=String((currentPage-1))%>&task=<%=task%>"
                           <% } %> >&lt;&lt;</a></li>
